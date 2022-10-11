@@ -51,7 +51,7 @@ You can install this package by adding it as an input to your Nix flake.
 	description = "My system flake";
 
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
 
 		# Snowfall is not required, but will make configuration easier for you.
 		snowfall-lib = {
@@ -61,7 +61,6 @@ You can install this package by adding it as an input to your Nix flake.
 
 		tmux = {
 			url = "github:jakehamilton/tmux";
-			# This flake currently requires changes that are only on the Unstable channel. 
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
@@ -135,7 +134,7 @@ following example for how to create your own derivation.
 	description = "My tmux flake";
 
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
 
 		# Snowfall is not required, but will make configuration easier for you.
 		snowfall-lib = {
@@ -145,7 +144,6 @@ following example for how to create your own derivation.
 
 		tmux = {
 			url = "github:jakehamilton/tmux";
-			# This flake currently requires changes that are only on the Unstable channel. 
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
