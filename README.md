@@ -159,7 +159,7 @@ following example for how to create your own derivation.
 			outputs-builder = channels:
 				let
 					pkgs = channels.nixpkgs;
-					inherit (inputs.tmux.packages.${nixpkgs.system}) tmux;
+					inherit (inputs.tmux.packages.${pkgs.system}) tmux;
 				in
 				{
 					packages.custom-tmux = tmux.override {
