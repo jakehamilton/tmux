@@ -41,7 +41,7 @@ let
       for f in extrakto.sh open.sh tmux-extrakto.sh; do
         wrapProgram $target/scripts/$f \
           --prefix PATH : ${with pkgs; lib.makeBinPath (
-          [ pkgs.fzf pkgs.python3 pkgs.xclip wl-clipboard ]
+          [ pkgs.fzf pkgs.python3 ] ++ (lib.optional pkgs.stdenv.isLinux pkgs.xclip wl-clipboard)
           )}
       done
     '';
@@ -56,6 +56,7 @@ let
   plugins =
     [ extrakto ] ++
     (with pkgs.tmuxPlugins; [
+      resurrect
       continuum
       nord
       tilish
