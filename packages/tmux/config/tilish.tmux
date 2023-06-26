@@ -3,8 +3,9 @@ set -g @tilish-navigator "on"
 
 # Default to splitting once vertically and then splitting horizontally
 # after that.
-select-layout "main-vertical"
-select-layout -E
+# @NOTE(jakehamilton): This was causing an issue on macOS when run in iTerm2.
+# select-layout "main-vertical"
+# select-layout -E
 set -g @tilish-default "main-vertical"
 
 
