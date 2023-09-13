@@ -14,7 +14,7 @@
 #+ Plugin Support +
 #+----------------+
 #+--- tmux-prefix-highlight ---+
-set -g @prefix_highlight_output_prefix "#[fg=#5e81ac]#[bg=default]#[nobold]#[noitalics]#[nounderscore]#[bg=#5e81ac]#[fg=black,bg=default]"
+set -g @prefix_highlight_output_prefix "#[fg=#5e81ac]#[bg=default]#[nobold]#[noitalics]#[nounderscore]#[bg=#5e81ac]#[fg=black,bg=default]"
 set -g @prefix_highlight_output_suffix ""
 set -g @prefix_highlight_copy_mode_attr "fg=brightcyan,bg=black,bold"
 
@@ -29,9 +29,8 @@ set -g status-left "#[fg=brightblack,bg=white]  #S #[fg=white,bg=default,nobo
 set -g status-right "#[fg=#5e81ac,bg=default,nobold,noitalics,nounderscore]#[fg=white,bg=#5e81ac,nobold] #H  "
 
 #+--- Windows ---+
-# set -g window-status-format "#[fg=brightblack,bg=default,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] #I#[fg=white,bg=brightblack,nobold,noitalics,nounderscore]: #W #[fg=brightblack,bg=black,nobold,noitalics,nounderscore]"
-set -g window-status-format "#[fg=#2e3440,bg=black]#[fg=white,bg=black,bold,noitalics,nounderscore] #I#[fg=white,bg=black,bold,noitalics,nounderscore]: #W #[fg=black,bg=#2e3440,nobold,noitalics,nounderscore]"
-set -g window-status-current-format "#[fg=#2e3440,bg=#5e81ac]#[fg=white,bg=#5e81ac,bold,noitalics,nounderscore] #I#[fg=white,bg=#5e81ac,bold,noitalics,nounderscore]: #W #[fg=#5e81ac,bg=#2e3440,nobold,noitalics,nounderscore]"
+set -g window-status-format "#[fg=#2e3440,bg=black]#[fg=white,bg=black,nobold,noitalics,nounderscore] #I#[fg=white,bg=black,nobold,noitalics,nounderscore]: #W #[fg=black,bg=#2e3440,nobold,noitalics,nounderscore]"
+set -g window-status-current-format "#[fg=#2e3440,bg=#5e81ac]#[fg=white,bg=#5e81ac,nobold,noitalics,nounderscore] #I#[fg=white,bg=#5e81ac,nobold,noitalics,nounderscore]: #W #[fg=#5e81ac,bg=#2e3440,nobold,noitalics,nounderscore]"
 set -g window-status-separator ""
 
 # Center the window list (yes, this value has to be written as "centre").
