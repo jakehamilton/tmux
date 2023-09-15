@@ -26,7 +26,7 @@ set-option -g status-style bg=default
 
 #+--- Bars ---+
 set -g status-left "#[fg=brightblack,bg=white]  #S #[fg=white,bg=default,nobold,noitalics,nounderscore]"
-set -g status-right "#[fg=#5e81ac,bg=default,nobold,noitalics,nounderscore]#[fg=white,bg=#5e81ac,nobold] #H  "
+set -g status-right '#[fg=#5e81ac,bg=default,nobold,noitalics,nounderscore]#[fg=white,bg=#5e81ac,nobold,noitalics] #(TZ="America/Los_Angeles" date +%H:%M)  #[fg=white,bg=#5e81ac,nobold,noitalics,nounderscore]#[fg=brightblack,bg=white,nobold] #H  '
 
 #+--- Windows ---+
 set -g window-status-format "#[fg=#2e3440,bg=black]#[fg=white,bg=black,nobold,noitalics,nounderscore] #I#[fg=white,bg=black,nobold,noitalics,nounderscore]: #W #[fg=black,bg=#2e3440,nobold,noitalics,nounderscore]"
