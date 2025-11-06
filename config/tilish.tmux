@@ -10,4 +10,3 @@ set -g @tilish-default "main-vertical"
 
 
 bind-key -n "M-q" kill-pane
-

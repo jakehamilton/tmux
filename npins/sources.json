@@ -1,0 +1,50 @@
+{
+  "pins": {
+    "multiplex": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "jakehamilton",
+        "repo": "multiplex"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "38ba0208b93fce1e973e775e66de6674a46bf270",
+      "url": "https://github.com/jakehamilton/multiplex/archive/38ba0208b93fce1e973e775e66de6674a46bf270.tar.gz",
+      "hash": "1fjshfflnj3ggkc9wxskqrry3807qyrc195pwgr4hd61ydw996lk"
+    },
+    "nilla": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "nilla"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "2e98ae315a592ad6b6de44670514c048dcc88dc7",
+      "url": "https://github.com/nilla-nix/nilla/archive/2e98ae315a592ad6b6de44670514c048dcc88dc7.tar.gz",
+      "hash": "0fpl01sb3aw104w6190j3bcakkqd0z1r8s28x53p58hccy2p16fp"
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixos-unstable",
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre888552.b3d51a0365f6/nixexprs.tar.xz",
+      "hash": "1prwr19nnc66s594y32v8isbi0xr6qfk5vys96h08d3a9nb169d4"
+    },
+    "plugin-extrakto": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "laktak",
+        "repo": "extrakto"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "5004fb70292d9a4e7ea1a35c5fa9ba99768d02e8",
+      "url": "https://github.com/laktak/extrakto/archive/5004fb70292d9a4e7ea1a35c5fa9ba99768d02e8.tar.gz",
+      "hash": "15fa3gg5hkwhmzqgqf0j0znm8a220y5h47dgsmw531k9ys6qrzp8"
+    }
+  },
+  "version": 5
+}
