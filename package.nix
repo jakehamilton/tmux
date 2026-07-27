@@ -1,9 +1,9 @@
 { config }:
 
 {
-  config.packages.default = config.packages.neovim;
+  config.packages.default = config.packages.tmux;
 
-  config.packages.neovim = {
+  config.packages.tmux = {
     systems = [
       "x86_64-linux"
       "aarch64-linux"
@@ -15,7 +15,6 @@
       {
         pkgs,
         lib,
-        callPackage,
         tmuxPlugins,
         ...
       }:
